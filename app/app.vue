@@ -3,9 +3,8 @@
 <template>
 	<UApp>
 		<NuxtRouteAnnouncer />
-		<UButton
-			to="/"
-			label="Home"
-		/>
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
 	</UApp>
 </template>
