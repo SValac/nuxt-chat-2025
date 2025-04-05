@@ -3,5 +3,16 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"files.associations": {
+		"*.vue": "vue",
+		"*.css": "tailwindcss"
+	},
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"tailwindCSS.classAttributes": ["class", "ui"],
+	"tailwindCSS.experimental.classRegex": [
+		["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+	]
 }

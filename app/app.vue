@@ -1,6 +1,11 @@
+<script setup></script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+	<UApp>
+		<NuxtRouteAnnouncer />
+		<UButton
+			to="/"
+			label="Home"
+		/>
+	</UApp>
 </template>
