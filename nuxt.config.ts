@@ -1,18 +1,32 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-				compatibilityDate: '2024-11-01',
-				devtools: { enabled: true },
-				future: {
-								compatibilityVersion: 4
-				},
+	compatibilityDate: '2024-11-01',
+	devtools: { enabled: true },
+	future: {
+		compatibilityVersion: 4
+	},
 
-				css: ['~/assets/css/main.css'],
+	css: ['~/assets/css/main.css'],
 
-				modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxtjs/mdc'],
-				runtimeConfig: {
-								openaiApiKey: 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-								public: {
-												publicApiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-								}
-				}
+	modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxtjs/mdc'],
+	runtimeConfig: {
+		openaiApiKey: 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+		public: {
+			publicApiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+		}
+	},
+	mdc: {
+		highlight: {
+			theme: 'github-dark',
+			langs: [
+				'html',
+				'markdown',
+				'vue',
+				'javascript',
+				'typescript',
+				'css',
+				'json'
+			]
+		}
+	}
 });
